@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crea tu cuenta"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu RUT:"
+        android:textSize="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <EditText
+        android:id="@+id/et_rut"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="ej: 12345678-k"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu nombre:"
+        android:textSize="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <EditText
+        android:id="@+id/et_nombres"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="ej: Ricardo Mauricio"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tus apellidos:"
+        android:textSize="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <EditText
+        android:id="@+id/et_apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="ej: Gonzalez Vejar"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu saldo:"
+        android:textSize="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <EditText
+        android:id="@+id/et_saldo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="20sp"
+        android:hint="ej: 1000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu contrasena:"
+        android:textSize="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <EditText
+        android:id="@+id/et_pass1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="ej: 123456"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vuelve a ingresar la contrasena:"
+        android:textSize="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <EditText
+        android:id="@+id/et_pass2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="ej: 123456"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <Button
+        android:id="@+id/bt_crear"
+        android:onClick="crear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VALIDAR Y CREAR"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"/>
+</LinearLayout>
