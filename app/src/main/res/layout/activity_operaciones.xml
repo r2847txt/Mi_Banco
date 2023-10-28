@@ -5,27 +5,23 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_titulo"
+        android:id="@+id/tv_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Selecciona una opcion"
         android:textAlignment="center"
         android:textSize="39sp"
         android:textStyle="bold"
         android:layout_marginTop="10sp"
-        android:layout_marginBottom="70sp"/>
-
-    <TextView
-        android:id="@+id/tv_nombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp" />
+        android:layout_marginBottom="5sp"/>
 
     <TextView
         android:id="@+id/tv_saldo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp" />
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="70sp"/>
 
     <Button
         android:id="@+id/bt_girar"
@@ -35,8 +31,7 @@
         android:layout_marginRight="20sp"
         android:layout_marginBottom="50sp"
         android:onClick="girar"
-        android:text="Girar             ↑"
-        android:textAlignment="textStart"
+        android:text="Girar"
         android:textSize="39sp"/>
 
     <Button
@@ -47,8 +42,7 @@
         android:layout_marginRight="20sp"
         android:layout_marginBottom="50sp"
         android:onClick="depositar"
-        android:text="Depositar     ↓"
-        android:textAlignment="textStart"
+        android:text="Depositar"
         android:textSize="39sp"/>
     <Button
         android:id="@+id/bt_pagar"
@@ -58,8 +52,7 @@
         android:layout_marginRight="20sp"
         android:layout_marginBottom="50sp"
         android:onClick="pagar"
-        android:text="Pagar           →"
-        android:textAlignment="textStart"
+        android:text="Pagar"
         android:textSize="39sp"/>
 
 </LinearLayout>

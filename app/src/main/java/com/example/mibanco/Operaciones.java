@@ -20,7 +20,7 @@ public class Operaciones extends AppCompatActivity {
         // recibir el objeto desde Main u operacionessecundarias
         cuenta = (Cuenta) getIntent().getExtras().getSerializable("cuenta");
         nombre.setText("Hola " + cuenta.getNombres());
-        saldo.setText("Tu saldo actualizado: " + cuenta.getSaldo());
+        saldo.setText("Tu saldo: $" + cuenta.getSaldo());
     }
     public void girar(View view) {
         try {
