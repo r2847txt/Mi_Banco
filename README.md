@@ -12,7 +12,7 @@
 - ✅ 4 Customers: Todos los customers devuelven *true* si realizaron la operacion con exito o throw new Exception() indicando el o los erroes asociados.
 - ✅ **Girar:** Recibe como parametro el monto a girar, verifica que el monto sea positivo y saldo de la cuenta sea mayor o igual para realizar el giro, actualizando el saldo.
 - ✅ **Depositar:** Recibe como parametro el monto a depositar, verifica que el monto sea positivo, actualizando el saldo.
-- ✅ **Pagar:** Recibe rut, numSecreto, monto a transferir, verifica que el rut sea el mismo de la cuenta, numSecreto sea correcto, monto a girar sea positivo y que alcance el saldo para hacer el pago y actualizar el saldo.
+- ‼️ **Pagar:** Recibe rut, numSecreto, monto a transferir, verifica que el rut sea el mismo de la cuenta, numSecreto sea correcto, monto a girar sea positivo y que alcance el saldo para hacer el pago y actualizar el saldo.
 - ✅ **Validar:** Verifica que existan los datos correctos de los atributos de la clase.
 
 Los datos solicitados seran obligatorios, debiendo mostrar los mensajes correspondientes utilizando los *setErrors()* en los *EditText* correspondientes y *Toast* y/o ventana emergente indicando que hay error.
