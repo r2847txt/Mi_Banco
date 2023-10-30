@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         pass1 = findViewById(R.id.et_pass1);
         pass2 = findViewById(R.id.et_pass2);
         saldo = findViewById(R.id.et_saldo);
+
+        cargarPreferences();
     }
 
     public void crear(View view) {
@@ -33,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
             cuenta.setApellidos(apellidos.getText().toString());
             cuenta.setSaldo(Integer.parseInt(saldo.getText().toString()));
             cuenta.setNumSecreto(pass1.getText().toString());
-
-            cargarPreferences();
 
             if(cuenta.validar()) {
                 guardarPreferences();
@@ -71,17 +71,17 @@ public class MainActivity extends AppCompatActivity {
     private void cargarPreferences() {
         SharedPreferences preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
 
-        String ruty = preferences.getString("rut","");
-        String nombresy = preferences.getString("nombres", "");
-        String apellidosy = preferences.getString("apellidos", "");
-        String saldoy = preferences.getString("saldo", "");
-        String numSecretoy = preferences.getString("numSecreto", "");
+        String rutx = preferences.getString("rut","");
+        String nombresx = preferences.getString("nombres", "");
+        String apellidosx = preferences.getString("apellidos", "");
+        int saldox = preferences.getInt("saldo", 0);
+        String numSecretox = preferences.getString("numSecreto", "");
 
-        nombres.setText(nombresy);
-        apellidos.setText(apellidosy);
-        rut.setText(ruty);
-        pass1.setText(numSecretoy);
-        pass2.setText(numSecretoy);
-        saldo.setText(Integer.parseInt(saldo.getText().toString()));
+        nombres.setText(nombresx);
+        apellidos.setText(apellidosx);
+        rut.setText(rutx);
+        pass1.setText(numSecretox);
+        pass2.setText(numSecretox);
+        saldo.setText(String.valueOf(saldox));
     }
 }

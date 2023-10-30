@@ -33,6 +33,16 @@ public class Operac_girar extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void verHistorialGirar(View view) {
+        try {
+            Intent i = new Intent(this, Historial_giros.class);
+            startActivity(i);
+        } catch (Exception ex) {
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
     public void volverDesdeGiro(View view) {
         try {
             Intent i = new Intent(this, Operaciones.class);

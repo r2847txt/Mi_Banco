@@ -35,6 +35,15 @@ public class Operac_depositar extends AppCompatActivity {
         }
     }
 
+    public void verHistorialDeposito(View view) {
+        try {
+            Intent i = new Intent(this, Historial_depositos.class);
+            startActivity(i);
+        } catch (Exception ex) {
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
     public void volverDesdeDeposito(View view) {
         try {
             Intent i = new Intent(this, Operaciones.class);

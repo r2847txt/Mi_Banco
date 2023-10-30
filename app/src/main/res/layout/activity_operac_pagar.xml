@@ -79,7 +79,7 @@
 
     <Button
         android:id="@+id/bt_historial"
-        android:onClick="crear"
+        android:onClick="verHistorialPago"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ver cartola"

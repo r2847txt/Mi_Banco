@@ -50,6 +50,4 @@ public class Operaciones extends AppCompatActivity {
             Toast.makeText(this, "Excepcion " + ex.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
-
-
 }
