@@ -69,33 +69,36 @@ public class Cuenta implements Serializable {
         if(saldo < 0) errores = true;
         return !errores;
     }
+
     public boolean depositar(int monto) throws Exception {
         if(monto > 0) {
             saldo += monto;
             return true;
         } else {
-            throw new Exception("Deposito no puede ser negativo!");
+            throw new Exception("El monto no puede ser negativo");
         }
     }
+
     public boolean girar(int monto) throws Exception {
         if(saldo < monto) {
-            throw new Exception("No alcanza la plata para girar");
+            throw new Exception("Saldo insufiente");
         }else if(monto < 0) {
-            throw new Exception("Monto no puede ser negativo");
+            throw new Exception("El monto no puede ser negativo");
         } else {
             saldo -= monto;
             return true;
         }
     }
+
     public boolean pagar(String rut, String clave, int monto) throws Exception {
         if(saldo < monto) {
-            throw new Exception("No alcanza la plata para el pago");
+            throw new Exception("Saldo insufiente");
         }else if(monto < 0) {
-            throw new Exception("Monto no puede ser negativo");
+            throw new Exception("El monto no puede ser negativo");
         } else if(rut.equals(this.rut) == false) {
             throw new Exception("Rut no coincide");
         } else if(clave != numSecreto){
-            throw new Exception("numero secreto no coincide");
+            throw new Exception("La clave no coincide");
         } else {
             saldo -= monto;
             return true;
