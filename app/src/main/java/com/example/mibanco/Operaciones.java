@@ -17,7 +17,6 @@ public class Operaciones extends AppCompatActivity {
         setContentView(R.layout.activity_operaciones);
         nombre = findViewById(R.id.tv_nombre);
         saldo = findViewById(R.id.tv_saldo);
-        // recibir el objeto desde Main u operacionessecundarias
         cuenta = (Cuenta) getIntent().getExtras().getSerializable("cuenta");
         nombre.setText("Hola " + cuenta.getNombres());
         saldo.setText("Tu saldo: $" + cuenta.getSaldo());

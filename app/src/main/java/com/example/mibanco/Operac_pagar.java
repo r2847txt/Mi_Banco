@@ -37,6 +37,7 @@ public class Operac_pagar extends AppCompatActivity {
     public void verHistorialPago(View view) {
         try {
             Intent i = new Intent(this, Historial_pagos.class);
+            i.putExtra("cuenta", cuenta);
             startActivity(i);
         } catch (Exception ex) {
             Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();

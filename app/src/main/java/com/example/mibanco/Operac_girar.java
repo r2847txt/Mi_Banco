@@ -37,6 +37,7 @@ public class Operac_girar extends AppCompatActivity {
     public void verHistorialGirar(View view) {
         try {
             Intent i = new Intent(this, Historial_giros.class);
+            i.putExtra("cuenta", cuenta);
             startActivity(i);
         } catch (Exception ex) {
             Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
