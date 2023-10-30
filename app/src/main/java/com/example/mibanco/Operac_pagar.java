@@ -33,6 +33,16 @@ public class Operac_pagar extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void verHistorialPago(View view) {
+        try {
+            Intent i = new Intent(this, Historial_pagos.class);
+            startActivity(i);
+        } catch (Exception ex) {
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
     public void volverDesdePago(View view) {
         try {
             Intent i = new Intent(this, Operaciones.class);
