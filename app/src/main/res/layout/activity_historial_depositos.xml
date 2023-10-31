@@ -3,6 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ListView
+        android:id="@+id/lv_hdepositos"
+        android:layout_width="match_parent"
+        android:layout_height="517dp" />
+
     <Button
         android:id="@+id/bt_volver"
         android:onClick="volverDesdeHistorialDeposito"
