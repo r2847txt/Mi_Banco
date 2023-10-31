@@ -25,6 +25,7 @@ public class Operac_pagar extends AppCompatActivity {
     public void realizar_pago(View view) {
         try {
             if(cuenta.girar(Integer.parseInt(pago.getText().toString()))){
+                saldo.setText("Tu saldo: $" + cuenta.getSaldo());
                 Toast.makeText(this, "Pago realizado",
                         Toast.LENGTH_SHORT).show();
             }

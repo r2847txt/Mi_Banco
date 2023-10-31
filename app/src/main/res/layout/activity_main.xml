@@ -31,7 +31,6 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="ej: 12345678-k"
-        android:layout_marginBottom="20sp"
         android:layout_marginLeft="5sp"
         android:layout_marginRight="5sp"/>
 
@@ -48,7 +47,6 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="ej: Ricardo Mauricio"
-        android:layout_marginBottom="20sp"
         android:layout_marginLeft="5sp"
         android:layout_marginRight="5sp"/>
 
@@ -65,7 +63,6 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="ej: Gonzalez Vejar"
-        android:layout_marginBottom="20sp"
         android:layout_marginLeft="5sp"
         android:layout_marginRight="5sp"/>
 
@@ -83,7 +80,6 @@
         android:layout_height="48dp"
         android:layout_marginLeft="5sp"
         android:layout_marginRight="5sp"
-        android:layout_marginBottom="20sp"
         android:hint="ej: 1000"/>
 
     <TextView
@@ -99,7 +95,6 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="ej: 123456"
-        android:layout_marginBottom="20sp"
         android:layout_marginLeft="5sp"
         android:layout_marginRight="5sp"/>
 
@@ -116,9 +111,9 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="ej: 123456"
-        android:layout_marginBottom="20sp"
         android:layout_marginLeft="5sp"
-        android:layout_marginRight="5sp"/>
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="10sp"/>
 
     <Button
         android:id="@+id/bt_crear"

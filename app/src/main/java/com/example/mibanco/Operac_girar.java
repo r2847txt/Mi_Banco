@@ -25,6 +25,7 @@ public class Operac_girar extends AppCompatActivity {
     public void realizar_giro(View view) {
         try {
             if(cuenta.girar(Integer.parseInt(giro.getText().toString()))){
+                saldo.setText("Tu saldo: $" + cuenta.getSaldo());
                 Toast.makeText(this, "Giro realizado",
                         Toast.LENGTH_SHORT).show();
             }
